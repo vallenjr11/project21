@@ -2,6 +2,9 @@
 
 https://vajresume.s3.amazonaws.com/VincentAllenJr.html
 
+/inspiration/guide/
+	https://cloudresumechallenge.dev/instructions/
+
 
 
 Done:
