@@ -1,4 +1,26 @@
 #link to s3 website
 
+https://vajresume.s3.amazonaws.com/VincentAllenJr.html
 
-http://vajresume.s3-website-us-east-1.amazonaws.com/
+
+
+Done:
+
+Resume Redo(started*Drake voice*)
+	The Webpage is hosted on S3
+
+In Design:
+
+Cloudfront to distrubute via https
+	WIP:
+		https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/getting-started-secure-static-website-cloudformation-template.html
+		https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
+
+New:
+	Cop a URL using Amazon Route 53 and link to above CDN (Cloudfront Distrubution Network)
+
+
+
+Learning Opportunity:
+	CSS
+	Javascript
