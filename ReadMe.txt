@@ -1,3 +1,4 @@
 #link to s3 website
 
-https://vajresume.s3.amazonaws.com/VincentAllenJr.html
+
+http://vajresume.s3-website-us-east-1.amazonaws.com/
