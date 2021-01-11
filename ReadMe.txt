@@ -11,6 +11,8 @@ Done:
 
 Resume Redo(started*Drake voice*)
 	The Webpage is hosted on S3
+	AWS certificate manager
+		used to provide https ssl/tls conection to website
 
 In Design:
 
@@ -26,4 +28,6 @@ New:
 
 Learning Opportunity:
 	CSS
-	Javascript
+	Javascripti
+	Terraform with aws
+	Ansible for config of vm and http server
