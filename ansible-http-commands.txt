@@ -1,0 +1,31 @@
+#Command list to get server up and running and http installed on base ec2 linux ami
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+Update OS
+sudo yum update -y
+
+Installs php and other dependencies
+sudo amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+
+#Install http
+sudo yum install httpd -y
+
+Start httpd
+ sudo systemctl start httpd
+
+To allow ec2-user to manage files in the default root directory for your Apache web server, modify the ownership and permissions of the /var/www directory.
+ In this tutorial, you add a group named www to your EC2 instance. Then you give that group ownership of the /var/www directory and add write permissions for the group.
+ Any members of that group can then add, delete, and modify files for the web server.
+
+sudo groupadd www
+sudo usermod -a -G www ec2-user
+sudo chgrp -R www /var/www
+sudo chmod 2775 /var/www
+find /var/www -type d -exec sudo chmod 2775 {} +
+find /var/www -type f -exec sudo chmod 0664 {} +
+
+add resume code to index.html
+/var/www/html
+  (use ansible to store code in the directory)
+
+ Change user/group for the index file since ran by apache
+ sudo chown apache.apache /var/www/html/index.html

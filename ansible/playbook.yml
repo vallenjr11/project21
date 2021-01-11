@@ -1,0 +1,42 @@
+---
+  -
+    hosts: web1
+    become: yes
+    become_method: sudo
+    tasks:
+      -
+        name: "Update packages"
+        yum:
+          name: "*"
+          state: latest
+      -
+        name: "Update EC2-dependencies"
+        command: amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+
+      -
+        name: "Install http"
+        yum:
+          name: httpd
+          state: latest
+      -
+        name: "Start httpd service"
+        systemd:
+          name: httpd
+          state: started
+#      -
+#        name: "Wait for httpd to start"
+#        wait_for:
+#        timeout: 60
+
+      -
+        name: "add permission for www file for index home"
+        script: /etc/ansible/scripts/ec2-user-modify-index.sh
+
+      -
+        name: "Copy resume index to server"
+        copy:
+          src: /etc/ansible/index.html
+          dest: /var/www/html/
+          #          owner: ec2-user
+          #          group: www
+          #          mode: 0644
