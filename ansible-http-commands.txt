@@ -29,3 +29,8 @@ add resume code to index.html
 
  Change user/group for the index file since ran by apache
  sudo chown apache.apache /var/www/html/index.html
+ 
+ 
+ For python test html
+https://stackoverflow.com/questions/35538/validate-xhtml-in-python/10519634#10519634
+	comment from March '20
