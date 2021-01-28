@@ -1,34 +1,21 @@
-#link to s3 website
+Project notes
 
-https://vajresume.s3.amazonaws.com/VincentAllenJr.html
+System Architecture:
+3 EC2 instances:
+	Ansible
+	HTTP
+	Terraform
+Completed:
 
-/inspiration/guide/
-	https://cloudresumechallenge.dev/instructions/
+Ansible playbook/role to install http to ec2 instance
 
-
-
-Done:
-
-Resume Redo)
-	The Webpage is hosted on S3
-	AWS certificate manager
-		used to provide https ssl/tls conection to website
-
-In Design:
-
-Cloudfront to distrubute via https
-	WIP:
-		https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/getting-started-secure-static-website-cloudformation-template.html
-		https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
-
-New:
-	Cop a URL using Amazon Route 53 and link to above CDN (Cloudfront Distrubution Network)
+To do:
+Code terraform deploy ec2 instance
+unit tests -Intergrate html test, use source found online. google "html' checker.
 
 
+Scope:
 
-Learning Opportunity:
-	CSS
-	Javascripti
-	Terraform with aws
-		EC2 Template https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template#instance-profile
-	Ansible for config of vm and http server
+Project to deploy webpage (resume) to the internet.
+
+
