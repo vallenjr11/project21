@@ -13,9 +13,12 @@ Jenkins
 Completed:
 
 Ansible play/role to install http to ec2 instance
+Networking-VPC,Subnets,Security Groups,Internet gateways
 
 On deck:
 Begin terraform code to deploy webserver
+#### Add config for .tf file and grab aws resources to form
+Add Ansible vault for keys
 
 To do:
 Add jenkins to deploy ansible playbook.
