@@ -15,9 +15,11 @@ Completed:
 Ansible play/role to install http to ec2 instance
 Networking-VPC,Subnets,Security Groups,Internet gateways
 
+WIP:
+
+Started on terraform code to deploy ec2 webserver instance
+
 On deck:
-Begin terraform code to deploy webserver
-#### Add config for .tf file and grab aws resources to form
 Add Ansible vault for keys
 
 To do:
