@@ -20,6 +20,9 @@ Begin terraform code to deploy webserver
 #### Add config for .tf file and grab aws resources to form
 Add Ansible vault for keys
 
+Configure ansible to connect to a remote repository
+grab project web page from repository with ansible and store in an index file for deploy
+Configure Dockerfile to grab ansible repo from github account
 To do:
 Add jenkins to deploy ansible playbook.
 ###https://medium.com/appgambit/configure-jenkins-with-ansible-7bfaa387fb1c
